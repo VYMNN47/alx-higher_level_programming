@@ -4,7 +4,7 @@
  * print_python_list_info - a C function that prints some
  * basic info about Python lists.
  * @p: PyObject list
-*/
+ */
 
 void print_python_list_info(PyObject *p)
 {
@@ -17,11 +17,10 @@ void print_python_list_info(PyObject *p)
 	printf("[*] Size of the Python List = %d\n", py_sz);
 	printf("[*] Allocated = %d\n", py_alloc);
 
-	for (x = 0; 0 < py_sz; x++)
+	for (x = 0; x < py_sz; x++)
 	{
 		printf("Element %d: ", x);
 		ptr = PyList_GetItem(p, x);
 		printf("%s\n", Py_TYPE(ptr)->tp_name);
 	}
 }
-
