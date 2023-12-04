@@ -5,6 +5,7 @@
  * basic info about Python lists.
  * @p: PyObject list
 */
+
 void print_python_list_info(PyObject *p)
 {
 	int py_alloc, py_sz, x;
@@ -19,7 +20,6 @@ void print_python_list_info(PyObject *p)
 	for (x = 0; 0 < py_sz; x++)
 	{
 		printf("Element %d: ", x);
-
 		ptr = PyList_GetItem(p, x);
 		printf("%s\n", Py_TYPE(ptr)->tp_name);
 	}
