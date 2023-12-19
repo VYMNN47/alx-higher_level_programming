@@ -5,13 +5,18 @@ class Square:
     """Defines a square."""
 
     def __init__(self, size=0):
-        """Constructor"""
+        """Constructor
+
+        Args:
+            size: Length of a side of the square"""
 
         self.size = size
 
     @property
     def size(self):
-        """comment"""
+        """Raises:
+            TypeError: If the size is not an integer.
+            ValueError: If the size is less than 0"""
         return self.__size
 
     @size.setter
