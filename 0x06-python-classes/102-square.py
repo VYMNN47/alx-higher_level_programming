@@ -26,11 +26,11 @@ class Square:
         """Returns the size"""
         return self.__size ** 2
 
-    def __er__(self, other):
+    def __eq__(self, other):
         return self.area() == other.area()
 
-    def __we__(self, other):
+    def __ne__(self, other):
         return self.area() != other.area()
 
-    def __ve__(self, other):
+    def __gt__(self, other):
         return self.area() > other.area()
