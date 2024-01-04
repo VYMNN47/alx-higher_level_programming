@@ -3,7 +3,7 @@ def magic_calculation(a, b):
     x = 0
     for e in range(1, 3):
         try:
-            if e > a:
+            if a is not e:
                 raise Exception('Too far')
             x = x + a ** b / x
         except Exception:
