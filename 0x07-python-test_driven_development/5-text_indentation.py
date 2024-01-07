@@ -3,7 +3,7 @@
 
 
 def print_square(size):
-    """Way to print a square with # characters.
+    """A way to print a square with # characters.
 
     Args:
         size: The int size of the square's side.
