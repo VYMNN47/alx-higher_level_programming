@@ -5,7 +5,7 @@ Contains the class MyInt
 
 
 class MyInt(int):
-    def __new__(cls, *a, **k):
+    def __new__(cls, *agrs, **kwargs):
         return super(MyInt, cls).__new__(cls, *a, **k)
 
     def __eq__(self, other):
