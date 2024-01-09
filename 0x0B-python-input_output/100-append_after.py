@@ -2,6 +2,7 @@
 '''A function that inserts a line of text to a file'''
 
 def append_after(filename="", search_string="", new_string=""):
+    '''a function that inserts a line of text to a file'''
     with open(filename, 'r', encoding='utf-8') as file:
         line_list = []
         while true:
