@@ -7,12 +7,12 @@ def pascal_triangle(n):
     if i <= 0:
         return []
 
-    trian = [[1]]
-    while len(trian) != i:
-        x = trian[-1]
+    triangle = [[1]]
+    while len(triangle) != i:
+        tri = trian[-1]
         temp = [1]
-        for e in range(len(x) - 1):
-            temp.append(x[e] + x[e + 1])
+        for x in range(len(tri) - 1):
+            temp.append(tri[x] + tri[x + 1])
         temp.append(1)
-        trian.append(temp)
-    return trian
+        triangle.append(temp)
+    return (triangle)
