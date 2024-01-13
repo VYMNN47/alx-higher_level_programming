@@ -87,3 +87,12 @@ class Rectangle(Base):
             self.x = x
         if y is not None:
             self.y = y
+
+    def update(self, *args, **kwargs):
+        '''Updates instance attributes via no-keyword & keyword args.'''
+        # print(args, kwargs)
+        if args:
+            self.__update(*args)
+        elif kwargs:
+            self.__update(**kwargs)
+
