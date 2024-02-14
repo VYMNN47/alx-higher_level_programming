@@ -1,2 +1,2 @@
 -- a script that lists all rows of the table
-select * from first_table;
+SELECT * FROM first_table;

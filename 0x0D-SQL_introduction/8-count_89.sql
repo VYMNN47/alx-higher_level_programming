@@ -1,2 +1,2 @@
 -- a script that displays the number of records
-select count(id) from first_table;
+SELECT COUNT(id) FROM first_table WHERE id = 89;
