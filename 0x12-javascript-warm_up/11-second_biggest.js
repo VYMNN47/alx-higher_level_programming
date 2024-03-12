@@ -1,12 +1,8 @@
 #!/usr/bin/node
 
-const args = process.argv.slice(2);
-let second_big = 0;
-
-if (args.length > 1) {
-  const ints = args.map(Number);
-  integers.sort((a, b) => b - a);
-  second_big = ints[1];
+if (process.argv.length <= 3) {
+  console.log(0);
+} else {
+  const numbers = process.argv.slice(2).map(Number).sort((a, b) => b - a);
+  console.log(numbers[1]);
 }
-
-console.log(second_big);
