@@ -20,6 +20,8 @@ if __name__ == '__main__':
                 states
             WHERE
                 name LIKE BINARY %(name)s
+            ORDER BY
+                states.id ASC
         """, {
             'name': argv[4]
         })
