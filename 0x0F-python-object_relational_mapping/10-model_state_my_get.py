@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+
 """
-lists all State objects from the database hbtn_0e_6_usa
+This script prints the State object id
+with the name passed as argument
+from the database `hbtn_0e_6_usa`.
 """
 
 from model_state import Base, State
