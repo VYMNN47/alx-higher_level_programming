@@ -3,14 +3,12 @@
 import sys
 import urllib.request
 
+import sys
+import urllib.request
 
-def fetch():
+if __name__ == "__main__":
     url = sys.argv[1]
 
     request = urllib.request.Request(url)
     with urllib.request.urlopen(request) as response:
         print(dict(response.headers).get("X-Request-Id"))
-
-
-if __name__ == "__main__":
-    fetch()
