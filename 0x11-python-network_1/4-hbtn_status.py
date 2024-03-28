@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Fetches https://alx-intranet.hbtn.io/status"""
-import urllib.request
+import requests
 
 
 def fetch():
@@ -11,8 +11,8 @@ def fetch():
         decoded = html.decode('utf-8')
 
     print("Body response:")
-    print("\t- type: {}".format(type(decoded)))
-    print("\t- content: {}".format(decoded))
+    print("\t- type: {}".format(type(html.text)))
+    print("\t- content: {}".format(html.text))
 
 
 if __name__ == "__main__":
