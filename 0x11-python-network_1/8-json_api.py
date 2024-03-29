@@ -4,6 +4,7 @@ http://0.0.0.0:5000/search_user with the letter as a parameter """
 import sys
 import requests
 
+
 def fetch():
     letter = "" if len(sys.argv) == 1 else sys.argv[1]
     payload = {"q": letter}
@@ -18,6 +19,6 @@ def fetch():
     except ValueError:
         print("Not a valid JSON")
 
-        
+
 if __name__ == "__main__":
     fetch()
