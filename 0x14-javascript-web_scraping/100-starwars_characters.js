@@ -3,11 +3,11 @@
 const request = require('request');
 const id = process.argv[2];
 const url = 'https://swapi-api.hbtn.io/api/films/';
-request.get(url + id, function (err, res, mv_id) {
+request.get(url + id, function (err, res, body) {
   if (err) {
     console.log(err);
   }
-  const data = JSON.parse(mv_id);
+  const data = JSON.parse(body);
   const cha = data.characters;
   for (const i of cha) {
     request.get(i, function (err, res, body1) {
@@ -19,3 +19,4 @@ request.get(url + id, function (err, res, mv_id) {
     });
   }
 });
+
