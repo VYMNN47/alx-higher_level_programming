@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('INPUT#btn_translate').click(function () {
-    const l = $('INPUT#language_code').val();
-    const url = `https://hellosalut.stefanbohacek.dev/?lang=${l}`;
+    const lang = $('INPUT#language_code').val();
+    const url = `https://hellosalut.stefanbohacek.dev/?lang=${lang}`;
     $.get(url, function (response) {
       $('div#hello').text(response.hello);
     });
